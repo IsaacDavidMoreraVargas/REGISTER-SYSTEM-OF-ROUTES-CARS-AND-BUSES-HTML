@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+   
+  
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="CSS/estilo-registro.css">
+    <script src="JS/javaScript.js" type="text/javascript"></script>
+    
+  </head>
+
+    <var>matriz</var>
+    <var>PR</var>
+    <var>RU</var>
+    <var>AU</var>
+    <var>IN</var>
+    <var>PS</var>
+    <var>PI</var>
+    <var>banderin</var>
+    <var>buscador</var>
+
+  <body>
+
+    
+
+    <header></header>
+    <title>Sistema registro y visualización autobuses</title>
+
+    <form name="formulario1">
+     <img3 style=" top: 23%; left: 3%"><p>Registro</p></img3>
+
+     <img1 style=" top: 28%; left: 3%"><p>Provincia</p></img1>
+      <p1 style=" top: 33%; left: 3%">
+      <select style=" width:461px" id="provinciaA"  data-default-value="---" required> 
+         <option onclick="provinciaAdd('p0')">--- </option>
+         <option onclick="provinciaAdd('p1')">San José</option> 
+         <option onclick="provinciaAdd('p2')">Alajuela</option>
+         <option onclick="provinciaAdd('p3')">Heredia</option>
+         <option onclick="provinciaAdd('p4')">Guanacaste</option> 
+         <option onclick="provinciaAdd('p5')">Limón</option>
+         <option onclick="provinciaAdd('p6')">Puntanrenas</option>
+         <option onclick="provinciaAdd('p7')">Cartago</option>
+       </select>
+     </p1>
+   
+      <img1 style=" top: 38%; left: 3%"><p>Ruta de pertenencia</p></img1>
+      <p1 style=" top: 43%; left: 3%" ><input id="ruta" type="text" size="60" name="rutapertenencia" value="Digite la ruta a la que pertenece el bus..." onclick="clis('ruta')" onkeydown="return Ruta(event)" required/></p1>
+  
+      <img1 style=" top: 48%; left: 3%"><p>¿Esta el bus autorizado?</p></img1>
+      <p1 style=" top: 53%; left: 3%">
+       <select style="width:461px" id="menu2"  data-default-value="---" name="autorizado" required> 
+         <option id="menu2" value="0">--- </option>
+         <option value="1" onclick="Autorizado('a1')">Si</option> 
+         <option value="2" onclick="Autorizado('a2')">No</option>
+      </select>
+     </p1>
+      
+      <img1 style=" top: 28%; left: 51%"><p>¿Esta el bus inscrito?</p></img1>
+      <p1 style=" top: 33%; left: 51%"> 
+        <select style=" width:461px" id="menu3"  data-default-value="---" name="inscrito" required> 
+         <option id="menu3" value="0">--- </option>
+         <option onclick="Inscrito('i1')">Si</option> 
+         <option onclick="Inscrito('i2')">No</option>
+        </select>
+     </p1>
+      
+
+      <img1 style=" top: 38%; left: 51%"><p>Cantidad de pasajeros sentados permitidos</p></img1>
+      <p1 style=" top: 43%; left: 51%"><input id="pasajeroSentados" type="text" size="60" value="Digite la cantidad de pasajeros sentados permitidos..." onclick="clis('pasajeroSentados')" onkeydown="return PasajerosSentados(event)" required/></p1>
+   
+      <img1 style=" top: 48%; left: 51%"><p>Cantidad de pasajeros de pie permitidos</p></img1>
+      <p1 style=" top: 53%; left: 51%"><input id="pasajeroPie" type="text" size="60" value="Digite la cantidad de pasajeros de pie permitidos..." onclick="clis('pasajeroPie')" onkeydown="return PasajerosPie(event)" required/></p1>
+      
+      <p1 style=" top: 58%; left: 30%; height:60px"><input style="height:60px" type="reset" size="100" value="Resetear datos" onclick= "valoresDefault()" /></p1>
+      <p1 style=" top: 58%; left: 41%; height:60px">
+      <input style="height:60px" type="button" size="100" value="Registrar" onclick= "pasarAregistro(); valoresSinMensaje()"  />
+      </p1> 
+
+      <a href="index.html" ><img2> </img2> </a>
+    <form>
+
+
+    <form1>
+      <img3 style=" top: 64%; left: 3%"><p>Listado</p></img3>
+
+      <img1 style=" top: 69%; left: 3%"><p>Provincia</p></img1>
+      <p1 style=" top: 75%; left: 3%">
+      <select style="width:461px" id="provinciaB" required> 
+         <option onclick="mostrar('p0')">---</option>
+         <option onclick="mostrar('p1')">San José</option>
+         <option onclick="mostrar('p2')">Alajuela</option>
+         <option onclick="mostrar('p3')">Heredia</option>
+         <option onclick="mostrar('p4')">Guanacaste</option> 
+         <option onclick="mostrar('p5')">Limón</option>
+         <option onclick="mostrar('p6')">Puntarenas</option>
+         <option onclick="mostrar('p7')">Cartago</option>
+       </select>
+      </p1>
+     
+     
+     <img class="div2" > </img>
+     <img class="div3" > </img>
+    <!-- cuadro gigante
+    -->
+     <!--
+     <p1 class="div4"><input id="consultadora" style ="height:99.5%; width:98.5%; border:solid 6%; color:black" type="text" value="aqui aparecera el texto consultado" disabled=»disabled»></input></p1>
+     -->
+
+     <p1 id="textoConsultado" class="div4">
+
+    <table id="tablaMuestra" class="colorTable">
+    <tr class="colorTable">
+    <td><strong>|Provincia</strong></td>
+    <td><strong>|Ruta</strong></td>
+    <td><strong>|Autorizado</strong></td>
+    <td><strong>|Inscrito</strong></td>   
+    <td><strong>|Pasajeros Sentados</strong></td>
+    <td><strong>|Pasajeros Pie|</strong>
+    </tr>
+    </table>
+      
+    </p1>
+
+ 
+     <img src="imagenes/foto0.png" class="div1" id="foto"> </img>
+       
+     <p1 style=" top:84.7%; left: 28.5%; height:55px; width:120px "><input style="height:55px; width:120px" type="button" size="100" value="Consultar" onclick=" imprimir(); valoresSinMensaje()"/>
+     </p1>
+ 
+    <form1>
+
+    <footer><p2 class="textCenter">BIENVENIDO AL SISTEMA DE REGISTRO Y LISTADO DE AUTOBUSES </p2></footer>
+    <div class="main"> </div>
+    
+  </body>
+  
+  
+
+</html>

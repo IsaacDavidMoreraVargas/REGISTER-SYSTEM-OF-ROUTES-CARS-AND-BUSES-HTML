@@ -1,0 +1,212 @@
+header
+{
+  border-color: none;
+  background-image: url(imagen/sn.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 90.5%;
+  height: 356px;
+  top: -8px;
+  left: -8px;
+  position: absolute;
+}
+
+p
+{
+   font-weight: bold;
+   color: white;
+   text-align: center;
+}
+
+
+
+img1
+{
+  transition: all 0.5s linear;
+  border-radius: 20px 20px 20px 20px;
+  border: solid;
+  border-color: black;
+  background-color: black;
+  background-image: url(imagen/separador2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 35%;
+  height: 4%;
+  position: absolute;
+}
+
+p1
+{
+  position: absolute;
+  border: solid;
+  border-color: black;
+}
+
+
+p2
+{
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+img2
+{
+  transition: all 0.5s linear;
+  border-radius: 20px 20px 20px 20px;
+  border: solid;
+  border-color: black;
+  background-color: none;
+  background-image: url(imagen/home.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 5%;
+  height: 3.6%;
+  top:  58%;
+  left: 50%;
+  position: absolute;
+}
+
+img2:hover
+{
+  transform: scale(0.9);
+  border-color: #525150;
+}
+
+img3
+{
+  transition: all 0.5s linear;
+  border-radius: 20px 20px 20px 20px;
+  border: solid;
+  border-color: black;
+  background-color: black;
+  background-image: url(imagen/separador2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 83%;
+  height: 4%;
+  position: absolute;
+}
+
+body
+{
+  border-color: none;
+  position: relative;
+}
+
+footer
+{
+  background-color: black;
+  border-style: solid;
+  border-radius: 0px;
+  text-align: center;
+  width: 90.5%;
+  height: 5%;
+  top:  96%;
+  left: -8px;
+  position: absolute;
+}
+
+
+.main
+{
+  height: 1600px; 
+}
+
+.div1
+{
+  transition: all 0.5s linear;
+  border-radius: 20px 20px 20px 20px;
+  border: solid;
+  border-color: black;
+  background-color: none;
+  color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 24.5%;
+  height: 17%;
+  top:  78%;
+  left: 3%;
+  position: absolute;
+}
+
+.div2
+{
+  transition: all 0.5s linear;
+  border-radius: 20px 20px 20px 20px;
+  border: solid;
+  border-color: black;
+  background-color: black;
+  color: black;
+  background-image: url(imagen/separador2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 9%;
+  height: 6%;
+  top:  78%;
+  left: 28.5%;
+  position: absolute;
+}
+
+.div3
+{
+  transition: all 0.5s linear;
+  border-radius: 20px 20px 20px 20px;
+  border: solid;
+  border-color: black;
+  background-color: black;
+  color: black;
+  background-image: url(imagen/separador2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 9%;
+  height: 6%;
+  top:  88.8%;
+  left: 28.5%;
+  position: absolute;
+}
+
+.div4
+{
+
+  transition: all 0.5s linear;
+  border-radius: 0px;
+  border: solid;
+  border-color: black;
+  background-color:  none;
+  color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 45.8%;
+  height: 25.8%;
+  top:  69%;
+  left: 40%;
+  position: absolute;
+}
+
+.colorTable
+{
+  text-align: center; 
+  font-size: 14.8px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.colorTableRed
+{
+  text-align: center; 
+  font-size: 14.8px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}

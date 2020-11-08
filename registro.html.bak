@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="CSS/estilo-registro.css">
+  </head>
+  <body>
+    <header></header>
+    <title>Sistema registro y visualización autobuses</title>
+    <div1>
+      <p>Tabla 1. Cantidad de autobuses a nivel pais, por provincia o region </p>
+      <table>
+        <tbody>
+          <tr>
+            <td class="colorTable"><strong> &nbsp; &nbsp; Provincia &nbsp;
+                &nbsp;</strong></td>
+            <td class="colorTable"><strong> &nbsp;&nbsp; Cantidad rutas &nbsp;
+                &nbsp; &nbsp; <br>
+                &nbsp; por region </strong></td>
+            <td class="colorTable"><strong> &nbsp; &nbsp; Cantidad buses por
+                &nbsp; &nbsp; &nbsp; <br>
+                region autorizados </strong></td>
+          </tr>
+          <tr>
+            <td><strong> San José </strong></td>
+            <td><strong> 118 </strong></td>
+            <td><strong> 1769 </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Alajuela </strong></td>
+            <td><strong> 77 </strong></td>
+            <td><strong> 442 </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Cartago </strong></td>
+            <td><strong> 62 </strong></td>
+            <td><strong> 614 </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Heredia </strong></td>
+            <td><strong> 28 </strong></td>
+            <td><strong> 476 </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Guanacaste </strong></td>
+            <td><strong> 84 </strong></td>
+            <td><strong> 327 </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Puntarenas </strong></td>
+            <td><strong> 81 </strong></td>
+            <td><strong> 414 </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Limón </strong></td>
+            <td><strong> 33 </strong></td>
+            <td><strong> 317 </strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div1> <div2>
+      <p>Tabla 2. Tabla general de empresas y autobuses </p>
+      <table>
+        <tbody>
+          <tr>
+            <td class="colorTable"><strong> &nbsp; &nbsp;Cantidad a nivel país
+                &nbsp; &nbsp;</strong></td>
+            <td class="colorTable"><strong> &nbsp; &nbsp;Total&nbsp; &nbsp; </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Empresas </strong></td>
+            <td><strong> 400 </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Autobuses <br>
+                autorizados </strong></td>
+            <td><strong> 4825 </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Autobuses <br>
+                inscritos </strong></td>
+            <td><strong> 4612 </strong></td>
+          </tr>
+          <tr>
+            <td><strong> Rutas </strong></td>
+            <td><strong> 562 </strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div2>
+    <div class="main"> </div>
+  </body>
+</html>

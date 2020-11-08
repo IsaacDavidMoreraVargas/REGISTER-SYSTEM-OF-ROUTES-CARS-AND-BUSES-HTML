@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="CSS/estilo-index.css">
+  </head>
+  <body>
+    <header> </header>
+    <title>Sistema registro y visualización autobuses</title>
+    <img1> </img1> <img2> </img2> <img3> </img3> <img4> </img4> <img5> </img5>
+    <div class="main"> </div>
+  </body>
+</html>
